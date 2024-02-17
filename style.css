@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+svg {
+    aspect-ratio: 16/9;
+    position: absolute;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(47deg,
+            #833ab4 0%,
+            rgba(253, 29, 29, 1) 50%,
+            rgba(252, 176, 69, 1) 100%);
+}
+
+.glass {
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.navbar1 {
+
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.navbar1 .brand img {
+    width: 120px;
+}
+
+.navbar1 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar1 ul li {
+    color: rgb(68, 45, 84);
+    list-style: none;
+    padding: 0 10px;
+    font-size: 19px;
+}
+
+.contact {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+
+.contact button ,.content button{
+    height: 45px;
+    width: max-content;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #442d54;
+    background-color: #fd6d11;
+    border-radius: 15px;
+    border: 5px;
+    outline: 3px solid #fd6d11;
+    transition: all .5s;
+} 
+
+.contact button:is(:hover, :focus),.content button:is(:hover, :focus) {
+    outline-offset: 3px;
+    transition: all .7s;
+}
+
+
+.title {
+    color:#442d54;
+    font-weight: 900;
+}
+
+.row {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.texte {
+    font-size: 17px;
+}
+
